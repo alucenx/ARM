@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "hostPoolName": {
+            "value": "MEM-QA-POC-HostPool"
+        },
+        "vmNamePrefix": {
+            "value": "qa"
+        },
+        "imageReference": {
+            "value": {
+                "id": "subscriptions/add4e482-443c-4b27-84ae-24ae1be033ad/resourceGroups/AVD-GoldImage-RG/providers/Microsoft.Compute/galleries/AVDImageGallery/images/qaImgDef1/versions/0.0.1"
+            }
+        },
+        "adminUsername": {
+            "value": "sccmadmin"
+        },
+        "adminPassword": {
+            "value": "H4qcY}YRahtF"
+        },
+        "domainJoinUsername": {
+            "value": "sccmadmin"
+        },
+        "domainJoinPassword": {
+            "value": "H4qcY}YRahtF"
+        },
+        "domainJoinOU": {
+            "value": "OU=Shared,OU=Hosts,OU=AVD,DC=stfnemeamem,DC=com"
+        },
+        "vmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "numberOfInstances": {
+            "value": 1
+        },
+        "publicIpNamePrefix": {
+            "value": "qa"
+        },
+        "virtualNetworkName": {
+            "value": "AVD-GoldImage-RG-vnet"
+        },
+        "subnetName": {
+            "value": "default"
+        }
+    }
+}
